@@ -1,0 +1,25 @@
+/* Ensure the html and body take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Use flexbox on the body to make content fill available space */
+body {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* The content section above the footer will take up the remaining space */
+.content-wrapper {
+  flex-grow: 1; /* Allows content to fill available space */
+}
+
+/* Footer styling */
+footer.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}

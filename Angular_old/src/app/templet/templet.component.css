@@ -1,0 +1,56 @@
+/* Ensure the container takes the full available width and height of the screen */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  overflow: hidden;
+}
+
+/* Ensure the images are centered properly */
+.image-slider {
+  display: flex;
+  width: 100%;
+  justify-content: center; /* Center images horizontally */
+}
+
+.image-slider img {
+  width: 100vw; /* 100% of the viewport width */
+  height: 100vh; /* 100% of the viewport height */
+  object-fit: cover; /* Ensures the images cover the container */
+  opacity: 0; /* Default hidden */
+  transition: opacity 1s ease-in-out;
+  position: absolute; /* Position absolute to allow centering */
+  left: 50%; /* Move to the center horizontally */
+  transform: translateX(-50%); /* Center the images horizontally */
+  top: 50%; /* Center the images vertically */
+  transform: translate(-50%, -50%); /* Adjust the transform to center both horizontally and vertically */
+}
+
+/* Active image with full opacity */
+.image-slider img.active {
+  opacity: 1; /* Visible when active */
+}
+
+/* Arrow button styling for navigation */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.arrow.left {
+  left: 20px;
+}
+
+.arrow.right {
+  right: 20px;
+}

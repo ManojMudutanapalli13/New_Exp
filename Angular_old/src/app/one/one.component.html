@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<div class="game-container">  
+  <div class="header">  
+    <div class="player">  
+      <img src="https://static.vecteezy.com/system/resources/previews/045/711/185/non_2x/male-profile-picture-placeholder-for-social-media-forum-dating-site-chat-operator-design-social-profile-template-default-avatar-icon-flat-style-free-vector.jpg" alt="Player 1" />  
+      <span>{{ playerX }}</span>  
+    </div>  
+    <div class="player">  
+      <img src="https://st4.depositphotos.com/9998432/27431/v/450/depositphotos_274313380-stock-illustration-person-gray-photo-placeholder-woman.jpg" alt="Player 2" />  
+      <span>{{ playerO }}</span>  
+    </div>  
+  </div>  
+
+  <div class="board">  
+    <div class="box" *ngFor="let cell of board; let i = index" (click)="makeMove(i)">  
+      {{ cell }}  
+    </div>  
+  </div>  
+
+  <div class="result">  
+    <h2 *ngIf="winner">{{ winner === 'Draw' ? 'It\'s a Draw!' : winner + ' Wins!' }}</h2>  
+    <button (click)="resetGame()" class="restart-button">Restart Game</button>  
+  </div>  
+</div>
+
+<app-footer></app-footer>

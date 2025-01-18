@@ -1,0 +1,10 @@
+<div class="container">
+  <div *ngFor="let box of boxes" class="box">
+    <img [src]="box.imgSrc" [alt]="box.alt" class="box-img">
+    <h1>{{ box.heading }}</h1>
+    <div class="buttons">
+      <button class="save-btn">{{ box.saveBtn }}</button>
+      <button class="later-btn">{{ box.laterBtn }}</button>
+    </div>
+  </div>
+</div>

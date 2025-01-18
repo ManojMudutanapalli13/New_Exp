@@ -1,0 +1,18 @@
+<div class="slider-container">
+  <div class="image-slider">
+    <img *ngFor="let image of images; let i = index" 
+         [src]="image" [alt]="'Image ' + (i + 1)" 
+         [class.active]="i === currentIndex">
+  </div>
+
+
+  <!-- Left Arrow -->
+  <div class="arrow left" (click)="slidePrev()">
+    <i class="fa fa-chevron-left"></i>
+  </div>
+
+  <!-- Right Arrow -->
+  <div class="arrow right" (click)="slideNext()">
+    <i class="fa fa-chevron-right"></i>
+  </div>
+</div>

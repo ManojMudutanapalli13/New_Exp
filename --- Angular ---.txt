@@ -1,0 +1,11 @@
+--- Angular ---
+
+In Cmd 
+to create a angular project -> ng new project_name (--standalone false) for 16 version
+
+to navigate into file cd projectname
+
+to compile angular file -> ng serve or (open package.json and check starts values in scripts json)
+
+to skip test file while creation a component-> ng g c --skip-tests
+ 

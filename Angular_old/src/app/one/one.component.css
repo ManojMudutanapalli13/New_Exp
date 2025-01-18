@@ -1,0 +1,94 @@
+/* Reset margins and set full height and width */  
+html, body {  
+  height: 100%;  
+  margin: 0;  
+  padding: 0;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  background: linear-gradient(to right, #9a8893, #ffbe53);  
+}  
+
+.game-container {  
+  text-align: center;  
+  padding: 30px; 
+  background: rgba(71, 4, 120, 0.7); /* Semi-transparent background for contrast */   
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);  
+}  
+
+.header {  
+  display: flex;  
+  justify-content: space-around;  
+  margin-bottom: 20px;  
+}  
+
+.player img {  
+  width: 60px;  
+  height: 60px;  
+  border-radius: 50%;  
+  margin-right: 10px;  
+}  
+
+.board {  
+  display: grid;  
+  grid-template-columns: repeat(3, 150px); /* Increased column size by 50% */  
+  gap: 15px; /* Slightly increased the gap between boxes */  
+  margin: 0 auto; /* Center horizontally */
+  justify-content: center; /* Center the grid content horizontally */
+  align-items: center;   
+  background: url('https://images4.alphacoders.com/279/thumb-1920-279264.jpg') no-repeat center center; /* Board background */  
+  background-size: cover;  
+  padding: 20px; /* Increased padding for better spacing */  
+  border-radius: 15px;  
+} 
+
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px; /* Adjusted font size for the larger boxes */
+  font-weight: bold;
+  cursor: default; /* Prevent the pointer cursor */
+  border: 2px solid #ccc;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  user-select: none; /* Prevent text selection */
+}
+
+.box:active {
+  outline: none; /* Remove focus outline */
+}
+ 
+
+.box:hover {  
+  background-color: rgba(255, 255, 255, 1);  
+  transform: scale(1.05); /* Add hover effect */  
+}  
+
+.result {  
+  margin-top: 20px;  
+  color: white; /* Adjust text color for contrast */  
+}  
+
+.restart-button {  
+  padding: 10px 20px;  
+  font-size: 16px;  
+  background-color: #ff7ecb;  
+  color: white;  
+  border: none;  
+  border-radius: 5px;
+  cursor: default;  
+  transition: background-color 0.3s ease;  
+  user-select: none;
+}  
+
+.restart:active {
+  outline: none; /* Remove focus outline */
+}
+
+.restart-button:hover {  
+  background-color: #ff5ba0;  
+}  
