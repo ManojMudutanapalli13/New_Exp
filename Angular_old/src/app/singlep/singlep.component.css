@@ -1,0 +1,37 @@
+/* Center the content vertically and horizontally */
+.body{
+  background: linear-gradient(to right, #ff9a9e, #fad0c4, #fbc2eb); /* Vibrant gradient background */
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4, #fbc2eb); /* Vibrant gradient background */
+}
+
+/* Title styling */
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Button styling */
+.back-button {
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(90deg, #6a11cb, #2575fc); /* Gradient button */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+}

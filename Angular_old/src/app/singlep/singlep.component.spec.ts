@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TicComponent } from './tic.component';
+import { SinglepComponent } from './singlep.component';
 
-describe('TicComponent', () => {
-  let component: TicComponent;
-  let fixture: ComponentFixture<TicComponent>;
+describe('SinglepComponent', () => {
+  let component: SinglepComponent;
+  let fixture: ComponentFixture<SinglepComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [TicComponent]
+      declarations: [SinglepComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TicComponent);
+    fixture = TestBed.createComponent(SinglepComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

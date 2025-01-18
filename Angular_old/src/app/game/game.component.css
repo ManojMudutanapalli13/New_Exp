@@ -1,0 +1,135 @@
+/* Reset margin and padding for the page */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif; /* Custom font */
+  background-image: url('https://example.com/your-image.jpg'); /* Use your own background image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Default text color */
+}
+
+/* Overlay to improve text visibility on the background */
+.intro-container {
+  position: relative;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 88px;
+  height: 660px;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif; /* Playful font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Soft shadow for better readability */
+}
+
+/* Flexbox for player info */
+.players-container {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+}
+
+/* Player input section */
+.player-info {
+  width: 45%;
+  text-align: left;
+}
+
+/* Custom input wrapper */
+.custom-input {
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #0e0e0e ;
+}
+
+/* Custom input field and dropdown */
+input, select {
+  width: 76%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.859);
+  color: rgb(74, 72, 87);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Focus effect on input and select */
+input:focus, select:focus {
+  border-color: #151414;
+  outline: none;  
+  background-color: rgba(93, 120, 244, 0.5);
+  color :#fff;
+}
+
+/* Hover and focus for the button */
+.buttons button {
+  padding: 15px 40px;
+  font-size: 20px;
+  background-color: #3951ecd3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease;
+  margin: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Button hover and active state */
+.buttons button:hover {
+  background-color: #2f20a0;
+  transform: scale(1.05);
+}
+
+.buttons button:active {
+  background-color: #ff4081;
+  transform: scale(0.98);
+}
+
+/* Button for dual and single player */
+.play-duo-btn {
+  background-color: #3b9e99; /* Different color for the second button */
+}
+
+.play-duo-btn:hover {
+  background-color: #2c7a74;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .players-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .player-info {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .buttons button {
+    width: 100%;
+    padding: 15px;
+  }
+}

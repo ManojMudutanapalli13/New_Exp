@@ -14,7 +14,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TempletComponent } from './templet/templet.component';
 import { BoxComponent } from './box/box.component';
-import { TicComponent } from './tic/tic.component';
+import { GameComponent } from './game/game.component';
+import { SinglepComponent } from './singlep/singlep.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TicComponent } from './tic/tic.component';
     FooterComponent,
     TempletComponent,
     BoxComponent,
-    TicComponent
+    GameComponent,
+    SinglepComponent
   ],
   imports: [
     BrowserModule,

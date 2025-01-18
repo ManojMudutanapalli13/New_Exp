@@ -7,6 +7,8 @@ import { FourComponent } from './four/four.component';
 import { FiveComponent } from './five/five.component';
 import { SixComponent } from './six/six.component';
 import { HomeComponent } from './home/home.component';
+import { GameComponent } from './game/game.component';
+import { SinglepComponent } from './singlep/singlep.component';
 const routes: Routes = [
   {
     path : "",
@@ -39,6 +41,14 @@ const routes: Routes = [
   {
     path : "six",
     component : SixComponent
+  },
+  {
+    path : "game",
+    component : GameComponent
+  },
+  {
+    path : "singlep",
+    component : SinglepComponent
   }
 ];
 

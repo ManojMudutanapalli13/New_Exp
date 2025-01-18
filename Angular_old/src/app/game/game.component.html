@@ -1,0 +1,39 @@
+<app-header></app-header>
+
+<div class="intro-container">
+  <h1 class="title">Ticking Time to Triumph: Make Your Mark!</h1>
+  
+  <div class="players-container">
+    <div class="player-info">
+      <label for="player1Name">Name:</label>
+      <input type="text" id="player1Name" placeholder="Enter player 1 name" />
+      
+      <label for="player1Gender">Gender:</label>
+      <select id="player1Gender">
+        <option value="" disabled selected>There is no other option</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+    
+    <div class="player-info">
+      <label for="player2Name">Name:</label>
+      <input type="text" id="player2Name" placeholder="Enter player 2 name" />
+      
+      <label for="player2Gender">Gender:</label>
+      <select id="player2Gender">
+        <option value="" disabled selected>There is no other option</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="buttons">
+    <button class="play-btn" [routerLink]="['/one']">Let's Play</button>
+    <button class="play-duo-btn" [routerLink]="['/singlep']">Single</button>
+    <button class="play-duo-btn" [routerLink]="['/game']">Duo Player</button>
+  </div>
+</div>
+
+<app-footer></app-footer>
